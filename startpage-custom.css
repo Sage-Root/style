@@ -1,29 +1,75 @@
-.css-kmnrnt {
-  display: none;
-  position: absolute;
-  left: -40px;
-  top: 0px;
-  width: 40px;
-  height: 100%;
-  background: #00000000;
-  pointer-events: none;
-  z-index: 5;
-  pointer-events: none;
+/* transparency */
+/* @this is an example comment which should get skipped fromt he styles generation. Hope it works... :3 */
+html,
+body,
+nav,
+#nav,
+.nav, .sticky-category-bar-container,
+navbar, body > .root-l-content, .p-archiveBody__container,
+.navbar, .page_wrapper.without-image,
+#navbar, header > .global-head-cont,
+header, .toc-sidebar,
+#header, #temp_banner, .ranavnode,
+.header, header::before, body > article,
+app, #root > div > div > .w-full,
+#app, footer, .sc-tvx700-7.egPRoP,
+.sidebar-wrap, .p-sectionLinks,
+section, .main, main::before,
+#__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
+#root, .min-h-screen.bg-white,
+.app, .AppContainer,
+.app-root, #wrapper, /* @Testing inline comments in selectors */
+body[data-theme="dark"], body[data-theme="light"],
+#pass-sidebar, .side-bar,
+#main, .sidebar, .global-content__content,
+main, .header-top,  /* any comment */
+#content, #cu-identity,
+section, .l-root,
+#__next, .landing-hero,
+#navigation-wrapper,
+#global-navbar, .layout__content-wrapper,
+.head.notfixed, .main-container,
+#app > div, .btm-nav > a, .oc-content--main,
+body.dark_mode, body.light_mode,
+text-div > textarea, #starlight__sidebar, .sidebar-pane, .page--article, #xf-guide,
+
+[data-color-theme] body, #__next > div, .hero-right, #middle, .HeaderLinks_header__Ia2QY, #page-content, section[data-role] {
+  background-color: transparent !important;
+  /* @Testing inline comments */
+  background: none !important;
+  border: none !important; /* any comment */
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+  /* any comment */
+  /* any comment */
 }
 
-.css-1fylkd8 {
-  /* background: rgb(46, 52, 67); */
-  /* box-shadow: none; */
-  position: absolute;
-  width: 100%;
-  color: rgb(235, 236, 247);
-  background: #00000000;
-  border-radius: 25px;
-  transition: border 0.2s;
-  overflow: hidden;
-  z-index: 999;
-  border: 1px solid #d8cab8;
-  box-shadow: none;
-  border-radius: 25px;
-  background: none;
+/* @ this comment will also get skipped */
+/* @ this too */
+/* darkreader $ This is a example description */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+@layer {
+  :root,
+  html,
+  body {
+    --darkreader-background-ffffff: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+/* no footer */
+footer,
+#Footer,
+.Footer,
+mfe-footer-pharos-footer,
+.footer,
+#footer {
+  display: none !important;
 }
